@@ -17,56 +17,61 @@
                 <li><a>Novidades</a></li>
                 <li><a>Melhor Avaliados</a></li>
             </ul>
-            <a>Github</a>
+            <a class="github">Github</a>
         </nav>
     </header>
     <main>
-        <section>
-            <header>
-                <span>Novidade</span>
-                <h1>Os melhores cafés do Brasil!!</h1>
-                <hr/>
-                <h2>Explore variados aromas e sabores de café para todos os gostos!!</h2>
-            </header>
-            <div>
-                <figure><img src="assets/3 Small Tweaks to Improve Your Health"/></figure>
-                <figure><img src="assets/Creamy French Hot Chocolate"/></figure>
-                <figure><img src="assets/Garçon! Un café frappé mais vegan et selon la recette traditionnelle grecque svp! What else_"/></figure>
-                <figure><img src="assets/I Love Coffee  - Descubra os benefícios do café"/></figure>
-                <figure><img src="assets/Torrar café em casa e tipos de torra"/></figure>
-                <figure><img src="assets/Yumm"/></figure>
-            </div>
-        </section>
-        <section>
-            <button>
-                <img src="assets/chevrons_down.png"/>
+        <div class="principal">
+            <section class="hero">
+                <header class="hero-content">
+                    <span class="destaque">Novidade</span>
+                    <h1>Os melhores cafés do Brasil!!</h1>
+                    <hr/>
+                    <h2 class="subtitulo">Explore variados aromas e sabores de café para todos os gostos!!</h2>
+                </header>
+                <div class="hero-images-container">
+                    <figure><img src="assets/3 Small Tweaks to Improve Your Health"/></figure>
+                    <figure><img src="assets/Creamy French Hot Chocolate"/></figure>
+                    <figure><img src="assets/Garçon! Un café frappé mais vegan et selon la recette traditionnelle grecque svp! What else_"/></figure>
+                    <figure><img src="assets/I Love Coffee  - Descubra os benefícios do café"/></figure>
+                    <figure><img src="assets/Torrar café em casa e tipos de torra"/></figure>
+                    <figure><img src="assets/Yumm"/></figure>
+                </div>
+            </section>
+        </div>
+        <section class="botao-container">
+            <button type="button">
+                <img src="https://static.thenounproject.com/png/1979830-200.png"/>
             </button>
         </section>
-        <section>
-            <header>
-                <span>Receitas</span>
-                <h2>Confira as últimas receitas</h2>
-                <p>Dê uma olhada nas receitas mais amadas!</p>
+        <section class="receitas">
+            <header class="receitas-cabecalho">
+                <span class="destaque">Receitas</span>
+                <h2 class="receitas-titulo">Confira as últimas receitas</h2>
+                <p class="receitas-subtitulo">Dê uma olhada nas receitas mais amadas!</p>
             </header>
-            <div>
-                <div>
-                    <header>
-                        <div>
-                            <span>em alta </span>
-                            <h3>Capuccinno</h3>
+            </div>
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque">em alta </span>
+                            <h3 class="receita-titulo">Cappuccino</h3>
                         </div>
-                        <p>Extraordinário  .  4/4</p>
+                        <p class="receita-avaliacao">Extraordinário  .  4/4</p>
                     </header>
-                    <p>Uma bebida ideal para os amantes de doce e cremosidade.</p>
+                    <p class="receita-descricao">Uma bebida ideal para os amantes de doce e cremosidade.</p>
+                    <div class="receita-autor">
+                        <img src="https://avatars.githubusercontent.com/u/128856966?v=4"/>
+                        <span class="receita-autor-nome">Emmanuel Rodrigues</span>
+                    </div>
                 </div>
-                    <img src="https://avatars.githubusercontent.com/u/128856966?v=4"/>
-                    <span>Emmanuel Rodrigues</span>
             </div>
         </section>
     </main>
     <footer>
-        <p>Copyright &lt;CODEFEE&gt; 2024</p>
-        <p>Feito com muito amor e café por Emmanuel Rodrigues</p>
+        <p class="footer-copy">Copyright &lt;CODEFEE&gt; 2024</p>
+        <p class="footer-slogan">Feito com muito amor e café</p>
     </footer>
 </body>
 </html>
