@@ -127,18 +127,6 @@ hr {
     transform: translate('0, -50%');
 }
 
-button {
-    border: none;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background: #A45A49;
-}
-
-button > img {
-    width: 4rem;
-    align-items: center;
-}
-
 .receitas {
     display: flex;
     flex-direction: column;
