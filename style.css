@@ -150,6 +150,7 @@ hr {
     max-width: 1120px;
     padding: 3rem 2rem;
     margin: auto;
+    align-items: center;
 }
 
 .receitas-cabecalho {
@@ -175,31 +176,27 @@ hr {
 .receitas-card-container {
     padding: 0rem 10rem;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
 .receitas-card {
+    display: grid;
     background: #241A1C;
     padding: 2rem;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
+    border-radius: 2rem;
     gap: 2rem;
     flex-basis: 29rem;
 }
 
 .receitas-card-cabecalho {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 }
 
 .receitas-card-cabecalho-detalhes {
     display: flex;
-    flex-direction: row;
     gap: 0.5rem;
 }
 
@@ -266,7 +263,7 @@ footer {
     font-weight: 500;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     body {
         font-size: 14px;
     }
@@ -280,12 +277,13 @@ footer {
         right: 0;
         background: #1f1517;
         width: 100%;
+        flex-direction: column;
     }
     .menu li {
         border-bottom: 1px solid #363636;
     }
     .menu-toggle:checked + .menu-icon + .menu {
-        display: block;
+        display: flex;
     }
     .menu-mobile {
         display: flex;
@@ -304,9 +302,13 @@ footer {
     }
     .receitas-card-container {
         padding: 0rem 1rem;
+        flex-direction: column;
+        align-items: stretch;
     }
     .receitas-card {
         flex-basis: 100%;
+        max-width: 100%;
+        padding: 1rem;
     }
     .footer {
         padding: 2rem;
