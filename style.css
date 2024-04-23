@@ -29,6 +29,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -81,14 +82,20 @@ nav {
     width: 150px;
 }
 
-.github > img {
-    border-radius: 20rem;
-    width: 2.5rem;
+.menu-toggle, .menu-icon {
+    display: none;
 }
 
-.cadastro > img {
+.github {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.github > img, .cadastro > img {
     border-radius: 20rem;
     width: 2.5rem;
+    padding-left: 10rem;
 }
 
 main {
@@ -284,6 +291,24 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
+    .icon-container {
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+    }
+
+    .cadastro {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .github{
+        position: absolute;
+        top: auto;
+        right: 2.9rem;
+    }
+
     body {
         font-size: 14px;
     }
@@ -332,5 +357,90 @@ footer {
     }
     .footer {
         padding: 2rem;
+    }
+
+    .logo {
+        font-size: 3vh;
+    }
+
+    h1 {
+        font-size: 4vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .icon-container {
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+    }
+
+    .cadastro {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .github{
+        position: absolute;
+        top: auto;
+        right: 2.9rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    .menu-toggle:checked + .menu-icon {
+        display:block
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #1f1517;
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu li {
+        border-bottom: 1px solid #363636;
+    }
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+    .menu-mobile {
+        display: flex;
+    }
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    .hero {
+        flex-direction: column;
+        gap: 3rem;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .hero-images-container {
+        column-count: 1;
+    }
+    .receitas-card-container {
+        padding: 0rem 0rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .receitas-card {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .footer {
+        padding: 2rem;
+    }
+
+    .logo {
+        font-size: 3vh;
+    }
+
+    h1 {
+        font-size: 4vh;
     }
 }
