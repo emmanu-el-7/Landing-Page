@@ -127,13 +127,6 @@ main {
     gap: 1rem;
 }
 
-.destaque {
-    font-family: Epilogue;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
 h1 {
     font-family: Montserrat;
     font-size: 3.5rem;
@@ -160,7 +153,7 @@ hr {
 }
 
 .hero-images-container > figure > img {
-    width: 100%;
+    width: 80%;
     border-radius: 0.5rem;
 }
 
@@ -205,10 +198,12 @@ hr {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    max-width: 50%;
 }
 
 .receitas-card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background: #241A1C;
     padding: 2rem;
     border-radius: 2rem;
@@ -230,8 +225,14 @@ hr {
 .receita-titulo {
     color: #FFF2E7;
     font-family: Montserrat;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
+}
+
+.receitas-imagem > img {
+    max-width: 100%;
+    border-radius: 5rem;
+    width: 20rem;
 }
 
 .receita-avaliacao {
@@ -290,8 +291,11 @@ footer {
     font-weight: 500;
 }
 
-@media only screen and (max-width: 800px) {
-<<<<<<< HEAD
+@media only screen and (max-width: 768px) {
+    .receita-avaliacao {
+        display: none;
+    }
+
     .icon-container {
         position: absolute;
         top: 1.5rem;
@@ -310,18 +314,18 @@ footer {
         right: 2.9rem;
     }
 
-=======
     .logo {
-        font-size: 3.5vh
+        font-size: 3.3vh
     }
     
->>>>>>> 3704e45758e7c9ae38b6ea4e227393b8085a4405
     body {
         font-size: 14px;
     }
+
     .menu-toggle:checked + .menu-icon {
         display:block
     }
+
     .menu {
         display: none;
         position: absolute;
@@ -331,120 +335,58 @@ footer {
         width: 100%;
         flex-direction: column;
     }
+
     .menu li {
         border-bottom: 1px solid #363636;
     }
+
     .menu-toggle:checked + .menu-icon + .menu {
         display: flex;
     }
+
     .menu-mobile {
         display: flex;
     }
+
     nav {
         padding: 1.5rem 1rem;
     }
+
     .hero {
         flex-direction: column;
         gap: 3rem;
         height: auto;
         padding: 2rem 1rem;
     }
+
     .hero-images-container {
         column-count: 1;
     }
+
     .receitas-card-container {
         padding: 0rem 1rem;
-        flex-direction: column;
-        align-items: stretch;
+        max-width: 100%;
     }
+
     .receitas-card {
         flex-basis: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .receitas-imagem > img{
         max-width: 100%;
-        padding: 1rem;
-    }
-    .footer {
-        padding: 2rem;
     }
 
-    .logo {
-        font-size: 3vh;
-    }
-
-    h1 {
+    .receita-titulo {
         font-size: 4vh;
     }
-}
 
-@media only screen and (max-width: 400px) {
-    .icon-container {
-        position: absolute;
-        top: 1.5rem;
-        right: 2rem;
+    .receita-autor-nome {
+        font-size: 2vh;
     }
 
-    .cadastro {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .github{
-        position: absolute;
-        top: auto;
-        right: 2.9rem;
-    }
-
-    body {
-        font-size: 14px;
-    }
-    .menu-toggle:checked + .menu-icon {
-        display:block
-    }
-    .menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: #1f1517;
-        width: 100%;
-        flex-direction: column;
-    }
-    .menu li {
-        border-bottom: 1px solid #363636;
-    }
-    .menu-toggle:checked + .menu-icon + .menu {
-        display: flex;
-    }
-    .menu-mobile {
-        display: flex;
-    }
-    nav {
-        padding: 1.5rem 1rem;
-    }
-    .hero {
-        flex-direction: column;
-        gap: 3rem;
-        height: auto;
-        padding: 2rem 1rem;
-    }
-    .hero-images-container {
-        column-count: 1;
-    }
-    .receitas-card-container {
-        padding: 0rem 0rem;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .receitas-card {
-        flex-basis: 100%;
-        max-width: 100%;
-    }
     .footer {
         padding: 2rem;
-    }
-
-    .logo {
-        font-size: 3vh;
     }
 
     h1 {
