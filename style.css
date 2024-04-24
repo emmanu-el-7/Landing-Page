@@ -110,7 +110,7 @@ main {
 
 .hero {
     background: #181012;
-    max-width: 1120px;
+    max-width: 3vh;
     height: 60vh;
     display: flex;
     flex-direction: row;
@@ -124,7 +124,6 @@ main {
 .hero-content {
     display: flex;
     flex-direction: column;
-    column-count: 3;
     gap: 1rem;
 }
 
