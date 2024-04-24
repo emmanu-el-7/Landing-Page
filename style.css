@@ -124,7 +124,7 @@ main {
 .hero-content {
     display: flex;
     flex-direction: column;
-    column-count: auto;
+    column-count: 3;
     gap: 1rem;
 }
 
