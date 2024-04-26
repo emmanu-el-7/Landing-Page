@@ -193,8 +193,14 @@ hr {
     border-radius: 50%;
     margin: 5px;
     cursor: pointer;
-    margin-top: 10vh;
+    margin-top: 10vh;    
+    transition: background-color 0.25s ease;
 }
+
+.navigation label:hover {
+    background-color: #A45A49;
+}
+
 
 #slide1:checked ~ .slides .slide:nth-child(1),
 #slide2:checked ~ .slides .slide:nth-child(2),
